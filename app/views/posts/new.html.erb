@@ -1,1 +1,10 @@
-<h1>Add a new post here</h1>
+<h1>Add a photo</h1>
+
+  <%=form_for @post do |f| %>
+    <%= f.file_field :picture %>
+
+    <%= f.text_area :caption %>
+    <%= f.submit %>
+
+
+  <% end %>
